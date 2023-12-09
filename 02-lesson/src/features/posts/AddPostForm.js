@@ -21,6 +21,7 @@ const AddPost = () => {
             dispatch(postAdded(title, content, userId))
             setTitle('')
             setContent('')
+            setUserId('')
         }
     }
 
