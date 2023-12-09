@@ -1,10 +1,10 @@
-import AddPost from './features/posts/AddPost'
+import AddPostForm from './features/posts/AddPostForm'
 import PostsList from './features/posts/PostsList'
 
 function App() {
     return (
         <main className="App">
-            <AddPost />
+            <AddPostForm />
             <PostsList />
         </main>
     )
