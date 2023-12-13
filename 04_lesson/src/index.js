@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import './index.css';
 import App from './App';
 import { store } from './app/store';
@@ -11,7 +12,11 @@ store.dispatch(fetchUsers())
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Router>
+        <Routes>
+          <Route path='/*' element={<App />}/>
+        </Routes>
+      </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
