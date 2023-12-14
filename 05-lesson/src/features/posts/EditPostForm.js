@@ -12,7 +12,7 @@ const EditPostForm = () => {
     const users = useSelector(selectAllUsers)
 
     const [title, setTitle] = useState(post?.title)
-    const [content, setContent] = useState(post?.content)
+    const [content, setContent] = useState(post?.body)
     const [userId, setUserId] = useState(post?.userId)
     const [requestStatus, setRequestStatus] = useState('idle')
 
